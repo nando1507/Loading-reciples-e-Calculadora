@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Loading</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body class="corpo"> 
+        <div>
+            </br>
+            </br>
+            </br>
+        </div>
+        <div class="loader" >
+            <div class="ball"> </div>
+            <div class="ball"> </div>
+            <div class="ball"> </div>
+            <span>Loading...</span>
+        </div>
+        <div>
+        
+        </div>
+
+
+
+        <div>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+        </div>
+        <div class="carregar"></div> 
+        <style>
+            @keyframes spin {
+                from {
+                    transform:rotate(0deg);
+                }
+                to {
+                    transform:rotate(360deg);
+                }
+            }
+            .carregar{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+
+                border-top: 8px solid rgba(0, 0, 0, 1);
+                border-left: 8px solid rgba(0, 0, 0, 1);
+                border-right: 8px solid rgba(0, 0, 0, 0);
+
+                animation: spin 1s infinite linear;
+            }
+
+        </style>
+
+
+        
+        <div>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+        </div>
+        <div class="pulsar"></div> 
+        <style>
+            @keyframes pulse {
+                0% {
+                    transform: scale(0.15);
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 0;
+                }
+                
+            }
+            .pulsar{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background: #fff;        
+                animation: pulse 0.85s infinite linear;
+            }
+
+        </style>
+
+        <div>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+        </div>
+        <div class="relogio"></div> 
+        <style>
+            @keyframes tick {
+                to{
+                    transform: rotate(359deg);
+                }
+                
+            }
+            .relogio{
+                position: relative;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                border: 2px solid #f9f9f9;
+                text-align: center;
+            }
+            .relogio::after{
+                content: "";
+                position: absolute;
+                bottom: 29px;
+                left: 30px;
+                display: block;
+                transform-origin: 0% 100%;
+                width: 1px;
+                height: 24px;                
+                background: #f9f9f9;        
+                animation: tick 1.5s infinite linear;
+            }
+
+
+        </style>
+
+        <div>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+        </div>
+        <div class="copo"></div> 
+        <style>
+            @keyframes load {
+                0%{ 
+                    box-shadow: 0 0 #ed3b65 inset;
+                }
+                /* 50%{
+                    box-shadow: 0 -35 #ed3b65 inset;
+                } */
+                100%{
+                    box-shadow: 0 -70px #ed3b65 inset;
+                }
+                
+            }
+            .copo{
+                transform: 
+                    perspective(140px) 
+                    rotateX(-45deg);
+                width: 32px;
+                height: 72px;
+                position: relative;
+                border: 2px solid #fff;
+                animation: load 1.5s linear infinite alternate;
+            }
+        </style>
+
+
+    </body>
+</html>

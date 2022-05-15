@@ -1,0 +1,53 @@
+.loader {
+    width: 120px;
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.loader span{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.ball{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: orange;
+    animation: bounce .5s alternate infinite;
+}
+
+.ball:nth-child(2){
+    animation-delay: .16s;
+}
+
+.ball:nth-child(3){
+    animation-delay: .32s;
+}
+
+@keyframes bounce{
+    from {
+        transform: scaleX(1.25);
+    }
+    to{
+        transform: translateY(-50px) scaleX(1);
+    }
+}
+
+.corpo{
+    background-color: steelblue;
+}
+
+.card {
+    transform: rotateX(60deg) rotateZ(60deg);
+    transition: transform 200ms;
+}
+
+.container:hover .card {
+    transform: rotateX(60deg) rotateZ(-45deg) translateZ(20px);
+}
+

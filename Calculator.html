@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Calculadora</title>
+        <link rel="stylesheet" type="text/css" href="/calculadora.css">
+    </head>
+    <body class=""> 
+        <h3>Calculadora</h3>
+        <form name="Calculadora">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" name="display" id="neelam" value="" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" class="operator" value="%" onclick="calculadora.display.value+='%'"> </td>
+                    <td> <input type="button" class="operator" value="CE" onclick="calculadora.display.value=''"> </td>
+                    <td> <input type="button" class="operator" value="C" onclick="calculadora.display.value+=''"> </td>
+                    <td> <input type="button" class="operator" value="<<" onclick="calculadora.display.value-=''"> </td>
+                </tr>   
+                <tr>
+                    <td> <input type="button" Class="numeral" value="7" onclick="calculadora.display.value+='7'"> </td>
+                    <td> <input type="button" Class="numeral" value="8" onclick="calculadora.display.value+='8'"> </td>
+                    <td> <input type="button" Class="numeral" value="9" onclick="calculadora.display.value+='9'"> </td>
+                    <td> <input type="button" Class="operator" value="+" onclick="calculadora.display.value+='+'"> </td>
+                </tr>   
+                <tr>
+                    <td> <input type="button" Class="numeral" value="4" onclick="calculadora.display.value+='4'"> </td>
+                    <td> <input type="button" Class="numeral" value="5" onclick="calculadora.display.value+='5'"> </td>
+                    <td> <input type="button" Class="numeral" value="6" onclick="calculadora.display.value+='6'"> </td>
+                    <td> <input type="button" Class="operator" value="-" onclick="calculadora.display.value+='-'"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" Class="numeral" value="1" onclick="calculadora.display.value+='1'"> </td>
+                    <td> <input type="button" Class="numeral" value="2" onclick="calculadora.display.value+='2'"> </td>
+                    <td> <input type="button" Class="numeral" value="3" onclick="calculadora.display.value+='3'"> </td>
+                    <td> <input type="button" Class="operator" value="*" onclick="calculadora.display.value+='*'"> </td>
+                </tr>   
+                <tr>
+                    <td> <input type="button" Class="numeral" value="0" onclick="calculadora.display.value+='0'"> </td>
+                    <td> <input type="button" Class="operator" value="," onclick="calculadora.display.value+=','"> </td>
+                    <td> <input type="button" Class="operator" value="=" onclick="calculadora.display.value+='='"> </td>
+                    <td> <input type="button" Class="operator" value="/" onclick="calculadora.display.value+='/'"> </td>
+                </tr>
+            </table>
+        </form>
+
+        <script type="text/javascript">
+            function setSoma(a, b){
+                return a + b;
+            }
+            
+            function setSubtracao(a, b){
+                return a - b;
+            }
+
+            function setMultiplicacao(a, b){
+                return a * b;
+            }
+
+            function setDivisao(a, b){
+                return a / b;
+            }
+
+            function setPercentual(a){
+                return a/100.0;
+            }
+
+
+        </script>
+    </body>
+</html>
